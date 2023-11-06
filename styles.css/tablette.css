@@ -1,0 +1,164 @@
+@media screen and (min-width: 480px) {
+  :root {
+    --font-size-title: 32px;
+    --font-size-subTitle: 20px;
+    --font-size-text: 18px;
+    --font-size-card-text: 16px;
+    --color-happy: #f4f6fe;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    padding: 30px 60px 30px 60px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 57px 60px 0 60px;
+    height: 334px;
+  }
+
+  .titleSection {
+    display: inline-flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: var(--font-size-title);
+  }
+
+  .rowWoman {
+    margin-top: 0;
+  }
+
+  .womanImg {
+    max-width: 279px;
+  }
+
+  .row {
+    left: -7px;
+    top: -34px;
+  }
+
+  .text-body {
+    text-align: left;
+    padding: 0 40px;
+  }
+  .card-activity {
+    max-width: 700px;
+  }
+
+  .card {
+    width: 314px;
+    height: 320px;
+    padding: 0 0 30px 30px;
+    font-size: var(--font-size-subTitle);
+  }
+
+  .imgCard {
+    width: 24px;
+  }
+
+  .text {
+    font-size: var(--font-size-subTitle);
+  }
+
+  .request {
+    font-size: var(--font-size-card-text);
+  }
+
+  .arrowStory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .arrow {
+    border: 1px solid var(--color-happy);
+    border-radius: 50px;
+    background: var(--color-principal);
+    padding: 26px;
+    display: flex;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-container-section {
+    width: 482px;
+  }
+
+  .dotte {
+    padding: 30px 0 100px 0;
+  }
+
+  .contact-container {
+    padding: 40px 0px 0px 0px;
+    width: 768px;
+    height: 798px;
+    align-items: center;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-self: stretch;
+    padding: 60px;
+  }
+
+  fieldset {
+    width: 570px;
+    padding: 40px 49px 40px 40px;
+  }
+
+  .interview {
+    gap: 20px;
+    max-width: 800px;
+    justify-content: center;
+    /* padding: 60px; */
+  }
+
+  .imgBlogs:nth-child(n + 3) {
+    display: none;
+    flex-direction: column;
+  }
+
+  .blogLegend {
+    padding: 30px;
+  }
+
+  footer {
+    padding: 50px 60px 50px 60px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .allItems {
+    display: grid;
+    grid-template-areas:
+      "reseauSocial  subscribe"
+      "contactSection explore";
+    gap: 60px;
+    text-align: left;
+  }
+
+  .reseauSocial {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
