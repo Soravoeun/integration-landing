@@ -5,11 +5,16 @@
     --font-size-text: 20px;
   }
 
+  header{
+    padding: 30px 135px;
+  }
+
   .title {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 623px;
+    padding: 123px;
   }
 
   .titleSection {
@@ -21,20 +26,49 @@
 
   .womanImg {
     max-width: 567.889px;
-    /*height: 616.016px; */
+    position: relative;
+    top: 47px;
   }
 
   .text {
     font-size: var(--font-size-text);
   }
 
+  .left{
+    transform: rotate(177deg);
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1440px;
+    /* height: 525px; */
+    height: 568px;
+    padding: 0 135px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: o;
+    justify-content: center;
+    z-index: 0;
+  }
+
+  fieldset {
+    position: relative;
+    top: 60px;
+  
+  }
+
   .row {
     left: -20px;
-    top: -25px;
+    top: 23px;
   }
 
   .brandIdentity {
-    padding: 90px 50px 70px 50px;
+    padding: 135px;
   }
 
   .reunion {
@@ -49,19 +83,18 @@
     text-align: center;
   }
 
-  .legend{
-    
+  .legend {
   }
 
   .text-body {
     font-size: var(--font-size-text);
   }
 
-  .card-activity{
-  max-width: 1400px;
-}
+  .card-activity {
+    max-width: 1400px;
+  }
 
-  .card{
+  .card {
     width: calc(25% - 20px);
     height: 320px;
     max-width: 270px;
@@ -93,5 +126,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "reseauSocial contactSection explore subscribe";
+  }
+
+  footer{
+    padding: 60px 135px;
   }
 }
