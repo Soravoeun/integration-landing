@@ -5,7 +5,7 @@
     --font-size-text: 20px;
   }
 
-  header{
+  header {
     padding: 30px 135px;
   }
 
@@ -34,7 +34,7 @@
     font-size: var(--font-size-text);
   }
 
-  .left{
+  .left {
     transform: rotate(177deg);
   }
 
@@ -42,10 +42,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1440px;
-    /* height: 525px; */
-    height: 568px;
-    padding: 0 135px;
+    width: 100%;
   }
 
   .contact {
@@ -58,8 +55,7 @@
 
   fieldset {
     position: relative;
-    top: 60px;
-  
+    top: 50px;
   }
 
   .row {
@@ -83,9 +79,6 @@
     text-align: center;
   }
 
-  .legend {
-  }
-
   .text-body {
     font-size: var(--font-size-text);
   }
@@ -98,6 +91,38 @@
     width: calc(25% - 20px);
     height: 320px;
     max-width: 270px;
+  }
+
+  .button-tablette {
+    display: none;
+  }
+
+  .button-desktop {
+    display: flex;
+  }
+
+  .card-container-section {
+    flex-direction: row;
+    width: 970px;
+  }
+
+  .speaking {
+    padding: 30px;
+  }
+
+  .textSection {
+    text-align: left;
+  }
+
+  .story-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .story-section-img {
+    padding-bottom: 20px;
   }
 
   .card:nth-child(n + 5) {
@@ -124,11 +149,19 @@
 
   .allItems {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 2fr 2fr 4fr;
     grid-template-areas: "reseauSocial contactSection explore subscribe";
   }
 
-  footer{
-    padding: 60px 135px;
+  footer {
+    padding: 60px 135px 20px 135px;
+  }
+
+  .rights {
+    padding-top: 60px;
+  }
+
+  .explore {
+    align-items: left;
   }
 }

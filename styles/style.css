@@ -9,6 +9,7 @@
   --font-size-subTitle: 18px;
   --font-size-text: 16px;
   --font-size-card-text: 14px;
+  --padding: 30px 135px 30px 135px;
   --heading: #1a2630;
   --text-color: #4f5863;
   --background-button: #4361ee;
@@ -17,6 +18,7 @@
   --color-principal: #e9f4ff;
   --text-underline: 2px solid #4361ee;
   --formulaire-border: 1px solid #e2e7ed;
+  --dot-color: #edeff9;
 }
 
 * {
@@ -59,9 +61,7 @@ header {
   font-weight: var(--font-weight-title);
   line-height: 150%;
   background: var(--color-principal);
-  width: auto;
-  height: 493px;
-  padding: 40px 0px 0px 0px;
+  padding: 40px 20px 0px 20px;
 }
 
 .titleSection {
@@ -102,7 +102,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 44px;
+  margin-top: 30px;
   position: relative;
 }
 
@@ -112,8 +112,8 @@ h1 {
   justify-content: flex-start;
   gap: 15.625px;
   position: absolute;
-  top: -24px;
-  left: 28px;
+  top: -4px;
+  left: 15px;
   z-index: 0;
 }
 
@@ -129,16 +129,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
   overflow: hidden;
   position: relative;
-  z-index: 1;
+  top: 20px;
+  left: 5px;
   max-width: 286px;
 }
 
 .womanImg img {
   width: 100%;
-  height: auto;
   border-radius: 15px;
 }
 
@@ -254,27 +253,27 @@ h1 {
 }
 
 .activity-design {
-  background: url(../images/Logo-design.svg) center center no-repeat;
+  background: url(../images/Logo-design.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .activity-development {
-  background: url(../images/development.svg) center center no-repeat;
+  background: url(../images/development.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .activity-UxDesign {
-  background: url(../images/Ux-Design.svg) center center no-repeat;
+  background: url(../images/Ux-Design.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .activity-digital {
-  background: url(../images/Digital-Marketing.svg) center center no-repeat;
+  background: url(../images/Digital-Marketing.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .activity-writing {
-  background: url(../images/Content-Writing.svg) center center no-repeat;
+  background: url(../images/Content-Writing.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -289,8 +288,12 @@ h1 {
 }
 
 .activity-print {
-  background: url(../images/Print-Design.svg) center center no-repeat;
+  background: url(../images/Print-Design.jpg) center center no-repeat;
   background-size: cover;
+}
+
+.button-desktop {
+  display: none;
 }
 
 .section {
@@ -300,7 +303,7 @@ h1 {
   align-items: center;
   color: var(--text-color);
   font-size: var(--font-size-subTitle);
-  padding: 70px 0 0 0;
+  padding: 30px 0px;
 }
 
 .arrow {
@@ -309,25 +312,28 @@ h1 {
 
 .card-container-section {
   background: var(--color-happy);
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px 30px 20px;
+  padding: 30px;
   margin: 40px 20px 0px 20px;
   gap: 20px;
   border-radius: 15px;
 }
 
-.card-container-section:nth-child(n + 3) {
-  display: none;
+.card-container-section.active{
+  display: flex;
+}
+
+.story-section {
+  text-align: center;
 }
 
 .speaking {
   text-align: center;
-  border-radius: 130px;
   object-fit: cover;
-  border: 5px solid rgb(187 212 243);
+  border-radius: 130px;
 }
 
 .dotte {
@@ -336,6 +342,22 @@ h1 {
   align-items: center;
   gap: 10px;
   padding: 30px 0 70px 0;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--dot-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active{
+  background-color: var(--heading);
 }
 
 .textSection {
@@ -353,29 +375,28 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+
 }
 
 .contact-container {
   background: var(--color-principal);
-  height: 830px;
   padding: 40px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 40px;
 }
+
 
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 30px;
-  padding: 40px 0px 50px 0px;
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-text);
   border: 0;
-  
 }
 
 .no-bold {
@@ -398,17 +419,16 @@ h1 {
 
 fieldset {
   display: flex;
-  width: 100%;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   gap: 20px;
   background-color: var(--color-button);
   padding: 30px 20px 30px 20px;
   border: none;
   border-radius: 15px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04);
-  
+  position: relative;
+  top: 50px;
 }
 
 .formulaire {
@@ -442,9 +462,7 @@ fieldset {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin: 0 auto;
   padding: 40px 0px 40px 0px;
-  /* max-width: 410px; */
 }
 
 .imgBlogs {
@@ -462,7 +480,7 @@ fieldset {
   max-width: 100%;
 }
 
-.blogLegend{
+.blogLegend {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -484,13 +502,18 @@ fieldset {
 
 footer {
   background: #03071b;
-  padding: 20px;
   margin-top: 70px;
+  color: #f5f5f5;
+  padding: 30px;
+}
+
+.allItems {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: #f5f5f5;
+  /* padding: 30px; */
+  gap: 40px;
 }
 
 .reseauSocial {
@@ -531,6 +554,12 @@ h4 {
   background: #03071b;
 }
 
+#field_email {
+  padding: 15px 16px;
+  font-size: 16px;
+  max-width: 370px;
+}
+
 .conditions {
   color: #f5f5f5;
   font-size: 13px;
@@ -549,7 +578,7 @@ h4 {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .contactSub {
@@ -573,7 +602,7 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .about {

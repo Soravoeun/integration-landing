@@ -84,10 +84,7 @@
               </div>
             </div>
             <div class="womanImg">
-              <img
-                src="images/woman-looking-color-palettes-medium-shot-2.svg"
-                alt="woman"
-              />
+              <img src="images/woman-working.jpg" alt="woman" />
             </div>
           </div>
         </section>
@@ -282,8 +279,13 @@
             </div>
           </div>
 
-          <div class="button">
-            <p>View more</p>
+          <div class="button button-tablette">
+            <p>View More</p>
+            <span class="material-symbols-outlined"> arrow_forward </span>
+          </div>
+
+          <div class="button button-desktop">
+            <p>Request a Quote</p>
             <span class="material-symbols-outlined"> arrow_forward </span>
           </div>
         </section>
@@ -292,73 +294,74 @@
           <h1>Happy <span class="underLine">stories</span> of our clients</h1>
 
           <div class="arrowStory">
-            <div class="arrow left">
+            <div class="arrow prev">
               <img src="images/arrow-right.svg" alt="arrowNavigation" />
             </div>
 
-            <div class="card-container-section">
+            <div class="card-container-section active">
               <div>
-                <img class="speaking" src="images/storie.svg" alt="meeting" />
+                <img class="speaking" src="images/storie.jpg" alt="meeting" />
               </div>
-              <div>
-                <img src="images/“.svg" alt="meeting" />
+              <div class="story-section">
+                <div class="story-section-img">
+                  <img src="images/“.svg" alt="meeting" />
+                </div>
+                <p class="textSection">
+                  With our extensive experience and deep understanding of brand
+                  strategy, design, and storytelling, we collaborate closely
+                  with our clients to craft brand experiences that resonate with
+                  their target audience. Our goal is to create brands that not
+                  only capture attention but also foster trust, loyalty, and
+                  recognition.
+                </p>
               </div>
-              <p class="textSection">
-                We believe that a strong brand is the cornerstone of every
-                successful business. We are a passionate team of branding
-                experts dedicated to helping businesses like yours create a
-                unique and compelling brand identity.
-              </p>
             </div>
 
             <div class="card-container-section">
               <div>
                 <img class="speaking" src="images/storie.svg" alt="meeting" />
               </div>
-              <div>
-                <img src="images/“.svg" alt="meeting" />
+              <div class="story-section">
+                <div class="story-section-img">
+                  <img src="images/“.svg" alt="meeting" />
+                </div>
+                <p class="textSection">
+                  Their design process is really unique. They collaborated with
+                  us on our project. The communication was simple and
+                  transparent. They have a talented team of designer who
+                  understands the insights very clearly and continues to push
+                  their efforts.
+                </p>
               </div>
-              <p class="textSection">
-                Their design process is really unique. They collaborated with us
-                on our project. The communication was simple and transparent.
-                They have a talented team of designer who understands the
-                insights very clearly and continues to push their efforts.
-              </p>
             </div>
 
             <div class="card-container-section">
               <div>
-                <img class="speaking" src="images/storie.svg" alt="meeting" />
+                <img class="speaking" src="images/storie.jpg" alt="meeting" />
               </div>
-              <div>
-                <img src="images/“.svg" alt="meeting" />
+              <div class="story-section">
+                <div class="story-section-img">
+                  <img src="images/“.svg" alt="meeting" />
+                </div>
+                <p class="textSection">
+                  We believe that a strong brand is the cornerstone of every
+                  successful business. We are a passionate team of branding
+                  experts dedicated to helping businesses like yours create a
+                  unique and compelling brand identity.
+                </p>
               </div>
-              <p class="textSection">
-                With our extensive experience and deep understanding of brand
-                strategy, design, and storytelling, we collaborate closely with
-                our clients to craft brand experiences that resonate with their
-                target audience. Our goal is to create brands that not only
-                capture attention but also foster trust, loyalty, and
-                recognition.
-              </p>
             </div>
 
-            <div class="arrow Right">
+            <div class="arrow next">
               <img src="images/arrow-right.svg" alt="arrowNavigation" />
             </div>
           </div>
         </section>
 
         <section class="dotte">
-          <div>
-            <img src="images/dotte.svg" alt="dotte" />
-          </div>
-          <div>
-            <img src="images/dotte.svg" alt="dotte" />
-          </div>
-          <div>
-            <img src="images/dotte.svg" alt="dotte" />
-          </div>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </section>
 
         <section class="contactUs">
@@ -465,7 +468,7 @@
           <div class="interview">
             <div class="imgBlogs">
               <div class="imgMeetingBlog">
-                <img src="images/agency-business.svg" alt="meetingBlogsImg" />
+                <img src="images/agency-business.jpg" alt="meetingBlogsImg" />
               </div>
               <div class="blogLegend">
                 <p class="legend">Basic rule of running web agency business</p>
@@ -479,7 +482,7 @@
 
             <div class="imgBlogs">
               <div class="imgMeetingBlog">
-                <img src="images/marketing-data.svg" alt="meetingBlogsImg" />
+                <img src="images/marketing-data.jpg" alt="meetingBlogsImg" />
               </div>
 
               <div class="blogLegend">
@@ -496,7 +499,7 @@
 
             <div class="imgBlogs">
               <div class="imgMeetingBlog">
-                <img src="images/audience.svg" alt="meetingBlogsImg" />
+                <img src="images/audience.jpg" alt="meetingBlogsImg" />
               </div>
 
               <div class="blogLegend">
@@ -550,9 +553,10 @@
               <input
                 class="border borderSub"
                 type="email"
-                id="SubEmail"
+                id="field_email"
+                placeholder="Your email here"
                 pattern=".+@globex\.com"
-                size="70%"
+                size="100%"
                 required
               />
             </div>
@@ -602,5 +606,6 @@
         <p class="rights">© 2023 Creative Design Agency, All Rights Reserved</p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
